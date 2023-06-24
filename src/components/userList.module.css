@@ -1,0 +1,154 @@
+.userListSection{
+    box-shadow: 0 0 10px #3b3b3b;
+    width: 90%;
+    height: 70%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    background: linear-gradient(#b28dea, #30b7c9);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    width: 90%;
+    height: 90vh;
+}
+/* width */
+.userListSection::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.userListSection::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.userListSection::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.userListSection::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.listItem {
+    background: white;
+    border-radius: 20px;
+    margin: 30px 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.listItem:before , .listFirstItem:before{
+    content: "";
+    width: 80%;
+    height: 100%;
+    border-radius: 18px 200px 0 18px;
+    background:linear-gradient(90deg, #ab7dff, #ccfffc) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.listFirstItem{
+    background: white;
+    border-radius: 20px;
+    margin: 30px 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.listFirstItem button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    opacity: 1;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #4ac24a;
+    z-index: 2;
+}
+
+.listFirstItem h4{
+    z-index: 2;
+}
+
+
+.leftSide{
+    color: #2d2d2d;
+    z-index: 2;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.right {
+
+}
+
+.sectionForButtons button{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 60px;
+    height: 30px;
+    border: none;
+    opacity: 0;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.listItem:hover .sectionForButtons button{
+    opacity: 0.9;
+    transition: all ease-in-out 300ms;
+}
+
+.edit:hover,.delete:hover{
+    box-shadow: 0 0 10px gray;
+}
+
+
+
+.sectionForButtons button:nth-child(1){
+    background: #ffcb00;
+    color: #000000;
+}
+
+.sectionForButtons button:nth-child(2){
+    background: #b42e2e;
+    color: #000000;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+}
+
+.name{
+    margin: 0 20px;
+}
+

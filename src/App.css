@@ -1,0 +1,7 @@
+.App {
+  background:linear-gradient( #745a9d, #006280);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
